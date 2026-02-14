@@ -34,7 +34,6 @@ class _SplashPageState extends State<SplashPage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: const [
-              // ضع لوجو PNG هنا لو عندك: Image.asset('assets/images/logo.png', height: 84)
               Icon(Icons.auto_fix_high_rounded, size: 72, color: Colors.white),
               SizedBox(height: 12),
               Text('Memoria', style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700)),

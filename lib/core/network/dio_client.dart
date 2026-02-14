@@ -5,15 +5,13 @@ class DioClient {
   late final Dio dio;
 
   DioClient() {
-    dio = Dio(
+    final dio = Dio(
       BaseOptions(
         baseUrl: ApiEndpoints.baseUrl,
         connectTimeout: const Duration(seconds: 30),
-        receiveTimeout: const Duration(seconds: 120),
-        sendTimeout: const Duration(seconds: 60),
-        headers: const {
-          'Accept': 'application/json',
-        },
+        sendTimeout: const Duration(seconds: 120),
+        receiveTimeout: const Duration(seconds: 300),
+        headers: const {'Accept': 'application/json'},
       ),
     );
 

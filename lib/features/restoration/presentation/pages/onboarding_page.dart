@@ -51,7 +51,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 fit: StackFit.expand,
                 children: [
                   Image.asset(it.image, fit: BoxFit.cover),
-                  // تدرج بسيط مثل التصميم
                   Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(

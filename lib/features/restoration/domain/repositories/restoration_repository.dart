@@ -4,7 +4,6 @@ import '../entities/restore_job.dart';
 abstract class RestorationRepository {
   Future<UploadResponseModel> upload(String filePath);
 
-  /// ترجع مسار ملف محفوظ محلياً
   Future<String> downloadEnhancedToFile(String imageId);
   Future<String> downloadCompareToFile(String imageId);
   Future<String> persistOriginal(String sourcePath);

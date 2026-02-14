@@ -15,7 +15,6 @@ class AppFileStore {
     if (!granted) return const SaveImageResult(success: false, message: 'تم رفض الصلاحية');
 
     try {
-      // حفظ مؤقت ثم حفظ للمعرض
       final temp = await File('${Directory.systemTemp.path}/$fileName').writeAsBytes(bytes, flush: true);
       await Gal.putImage(temp.path);
       return const SaveImageResult(success: true, message: 'تم حفظ الصورة في المعرض ✅');

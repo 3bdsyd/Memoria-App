@@ -36,7 +36,6 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 child: Stack(
                   children: [
-                    // ضع صورة مثل التصميم
                     Image.asset('assets/images/home_hero.jpg', height: 210, width: double.infinity, fit: BoxFit.cover),
                     Container(
                       height: 210,

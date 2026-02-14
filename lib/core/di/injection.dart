@@ -31,7 +31,6 @@ Future<void> configureDependencies() async {
     ),
   );
 
-  // Singleton bloc عشان ما يصير عندك أكثر من نسخة (سبب مشاكل كثيرة عندك)
   getIt.registerLazySingleton<RestorationBloc>(
     () => RestorationBloc(
       repo: getIt<RestorationRepository>(),
